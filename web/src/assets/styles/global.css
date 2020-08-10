@@ -4,7 +4,10 @@
     /* font-size padrão das app é de 16px */
     /* 16 x 0.6 = 9,6 */
     /* Utilizando assim se um dia eu precisar mexer no font-size de todos os container eu so precisarei mexer no root */
-    font-size: 60%;
+    /* font-size: 60%; */
+    /* 16 x 0,55 = 8.8px */
+    font-size: 55%;
+
 
     /* variaveis globais de cores, não utilizaremos cores estáticas, mas sim variáveis */
     --color-background: #F0F0F7;
@@ -60,10 +63,11 @@ textarea {
 }
 
 .container {
-    width: 90vh;
+    width: 90vw;
     /* Vai ocupar 90% da tela, a menos que esse 90% passe de 700 px. O 700px sera o maximo, o limite da tela */
     max-width: 700px;
 }
+
 
 /* Em dispositivos que eu esteja com uma largura no minimo de 700px ...*/
 @media ( min-width: 700px ) {

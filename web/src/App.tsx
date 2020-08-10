@@ -1,12 +1,14 @@
 import React from 'react';
 
+import Landing from './pages/Landing';
+
 //importando estilo global
 import './assets/styles/global.css';
 
 function App() {
   return (
-    <h1>Hello World!</h1>
-  );
+      <Landing />
+    );
 }
 
 export default App;
