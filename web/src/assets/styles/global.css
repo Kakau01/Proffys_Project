@@ -1,0 +1,75 @@
+/* Nesse Arquivo definiremos a estilização global das páginas */
+
+:root {
+    /* font-size padrão das app é de 16px */
+    /* 16 x 0.6 = 9,6 */
+    /* Utilizando assim se um dia eu precisar mexer no font-size de todos os container eu so precisarei mexer no root */
+    font-size: 60%;
+
+    /* variaveis globais de cores, não utilizaremos cores estáticas, mas sim variáveis */
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842C2;
+    --color-secundary: #04D361;
+    --color-secundary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A2;
+    --color-text-base: #626180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body, #root {
+    /* Faz com que a pagina ocupe sempre 100% da altura tela */
+    height: 100vh;
+}
+
+body{
+    background: var(--color-background);
+}
+
+
+/* Todo conteudo sempre alinhado ao centro da tela */
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+    /* 1rem = 9.6px */
+    font: 500 1.6rem Poppins;
+}
+
+.container {
+    width: 90vh;
+    /* Vai ocupar 90% da tela, a menos que esse 90% passe de 700 px. O 700px sera o maximo, o limite da tela */
+    max-width: 700px;
+}
+
+/* Em dispositivos que eu esteja com uma largura no minimo de 700px ...*/
+@media ( min-width: 700px ) {
+    /* eu aumentarei a fontsize  para 62.5% */
+    /* Converte 1rem para 10px => 16 x 0.625 = 10px*/
+    :root {
+        font-size: 62.5%;
+    }
+}
