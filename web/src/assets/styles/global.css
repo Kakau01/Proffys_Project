@@ -60,6 +60,7 @@ button,
 textarea {
     /* 1rem = 9.6px */
     font: 500 1.6rem Poppins;
+    color: var(--color-text-base);
 }
 
 .container {
