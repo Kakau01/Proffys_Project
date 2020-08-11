@@ -10,6 +10,7 @@ import './styles.css';
 interface PageHeaderProps {
     //propriedade obrigatoria - sem ? - com ? - não é obrigatoria
     title: string;
+    description?: string;
 }
 
 //temos que dizer que o Page Header pode receber uma propriedade chamada title
@@ -27,6 +28,9 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
             <div className="header-content">
                 {/* Recuperando o titulo */}
                 <strong>{props.title}</strong>
+{/* 
+                Caso existe a propriedade description */}
+                {props.description && <p>{props.description}</p>}
 
                 {/* Adicionando o formulario a header */}
                 {/* Mostra o conteudo que escrevi dentro do componente - propriedade automatica, portanto não precisa colocar dentro da interface */}
