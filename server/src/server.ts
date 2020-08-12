@@ -1,6 +1,7 @@
 //Da onde tudo irá partir ***PRINCIPAL ARQUIVO***
 
 import express from 'express';
+import routes from './routes';
 
 //Tudo vai partir desse app, rotas
 const app = express();
@@ -9,15 +10,11 @@ const app = express();
 //APP introduza um plugin que é o express.json
 app.use(express.json());
 
+//Apos declarar a rota e exportar no routes.ts
+app.use(routes);
 
-//para testar vou definir a primeira rota
-//quando o usuario entrar nessa rota, a funcao vai fazer executar algo
-//resquest - informacoes sobre a resquisicao - cabecalho e corpo
-//response - resposta que vou devolver do meu backend par ao frontend
-app.get('/', (request, response) => {
-    
-    return response.json({ message: 'Hello World'});
-});
+
+
 //faz a aplicacap ouvir uma requisicao http
 //quando nao temos a porta quer dizer que ela é a 80 - padrao
 //localhost://3333
