@@ -18,7 +18,7 @@ export async function up(knex: Knex){
 
         //Quando houve a conexão
         table.timestamp('created_at')
-            .defaultTo('now()')
+            .defaultTo(knex.raw('CURRENT_TIMESTAMP'))
             .notNullable();
     });
 }
