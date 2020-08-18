@@ -12,12 +12,33 @@
     color: var(--color-text-in-primary);
 }
 
-#search-teachers .input-block {
-    position: relative;
+#search-teachers button {
+    width: 100%;
+    height: 5.6rem;
+    background: var(--color-secundary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-top: 3.2rem;
 }
 
+#search-teachers button:hover {
+    background: var(--color-secundary-dark);
+}
+/*  
+#search-teachers .input-block {
+    position: relative;
+} */
+
 /* Todo inputblock que antes dele tem outro inputblock, ou seja, ele vai pegar os dois ultimos */
-#search-teachers .input-block + .input-block {
+/* #search-teachers .input-block + .input-block {
     margin-top: 1.4rem;
 }
 
@@ -37,11 +58,11 @@
     font: 1.6rem Archivo;
 
 
-}
+} */
 
 /* focus-within - Verifica se dentro do input-block tem um input que tenha focus, se sim ele estiliza o input block e nao o input */
 /* Fazer uma border inferior aparecer quando o usuario esta com o input selecionado */
-#search-teachers .input-block:focus-within::after {
+/* #search-teachers .input-block:focus-within::after {
     width: calc(100% - 3.2rem);
     height: 2px;
     content: "";
@@ -51,7 +72,7 @@
     right: 1.6rem;
     bottom: 0;
     
-}
+} */ */
 
 #page-teacher-list main {
     margin: 3.2rem auto;

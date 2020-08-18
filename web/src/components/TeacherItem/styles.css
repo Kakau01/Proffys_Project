@@ -37,7 +37,8 @@
 }
 
 .teacher-item > p {
-    padding: 0 0.5rem;
+    padding: 0.2rem 2rem;
+
     font-size: 1.6rem;
     line-height: 2.8rem;
 }
@@ -58,7 +59,7 @@
     display: block;
 }
 
-.teacher-item footer button {
+.teacher-item footer a {
     width: 16rem;
     height: 5.6rem;
     background: var(--color-secundary);
@@ -71,9 +72,11 @@
     align-items: center;
     justify-content: space-evenly;
     transition: 0.2s;
+    text-decoration: none;
+
 }
 
-.teacher-item footer button:hover {
+.teacher-item footer a:hover {
     background: var(--color-secundary-dark);
 }
 
